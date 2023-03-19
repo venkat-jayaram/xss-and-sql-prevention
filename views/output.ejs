@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OUTPUT</title>
+<link rel="stylesheet" type="text/css" href="/css/abc.css">
+<link rel="stylesheet" type="text/css" href="/css/xyz.css">
+</head>
+<body>
+<big><center>
+<h1>RESULT</h1>
+<h2>THE RECORD YOU WANTED</h2>
+    <% for(var i = 0; i<x.length; i++) {%>
+      <div class="formbg">
+      <div class="formbg-inner padding-horizontal--48">
+      <div class="container">
+         NAME: <%= x[i].name %><br>
+          ID: <%= x[i].ID %><br>    
+          PHONE NUMBER: <%= x[i].phone %><br>
+          ADDRESS: <%= x[i].address %><br>
+          AGE: <%= x[i].age %>
+      </div>
+      </div>
+      </div>
+        <% } %>
+
+</center></big>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABOUT XSS</title>
+<link rel="stylesheet" type="text/css" href="/css/abc.css">
+<link rel="stylesheet" type="text/css" href="/css/xyz.css">
+</head>
+<body>
+<big><center>
+<h1>CROSS SITE SCRIPTING AND SQL INJECTION</h1>
+<div class="container">
+<li>Cross-site scripting (XSS) is a type of security vulnerability typically found in web applications. XSS attacks enable attackers to inject client-side scripts into web pages viewed by other users</li>
+<li>Sql injection in an injection attack where the hacker will try to interfere with the applications logic</li>
+</div>
+<br><br>
+<div class="formbg">
+<div class="formbg-inner padding-horizontal--48">
+<form id="stripe-login" action='/front' method="POST">
+    <div class="field padding-bottom--24">
+        <input type="submit" name="submit" value="INSERT A RECORD">
+    </div>
+</form>
+<form  id="stripe-login" action='/response' method="POST">
+    <div class="field padding-bottom--24">
+        <input type="submit" name="submit" value="SERCH FOR A RECORD">
+    </div>
+</form>
+</div>
+</div>
+</center></big>
+<script>
+function func(a)
+{
+    document.write(a);
+}
+</script>
+</body>
+</html>
